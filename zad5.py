@@ -1,0 +1,8 @@
+a = input ("Podaj Miasto_A: ")
+b = input ("Podaj Miasto_B: ")
+Dystans = input (f"Dystans {a}-{b}: ")
+Cena_paliwa = input ("Podaj cenę paliwa: ")
+Spalanie = input ("Podaj spalanie na 100 km: ")
+Koszt = (int(Dystans) /100) * float (Spalanie) * float(Cena_paliwa)
+# koszt = round (koszt,2)
+print(f"Koszt przejazdu {a}-{b} to {Koszt:.2f} PLN")
