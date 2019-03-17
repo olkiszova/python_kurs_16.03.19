@@ -1,5 +1,5 @@
 #i=0
-#uma_temperatur = 0
+#suma_temperatur = 0
 
 #while i !=7:
  #   suma_temperatur += float (input("Podaj temperaturę: "))
@@ -19,5 +19,5 @@ while True:
     suma_temperatur += float (komenda)
     i = i+1
     print (i, suma_temperatur)
-    
+
 print ("Średnia", suma_temperatur, i, suma_temperatur/1)
