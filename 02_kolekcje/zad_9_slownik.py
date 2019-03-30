@@ -43,7 +43,7 @@ while True:
             print (f"Za {pr}: {koszyk[pr]} PLN")
         print ("="*30)
         print(f"Suma: {sum(koszyk.values())}")
-
+        koszyk = {}
     elif komenda == 'm':
         produkt_do_dodania = input ("Co chcesz dodać? ")
         ile_do_dodania = int(input("Ile chcesz tego dodać? "))
