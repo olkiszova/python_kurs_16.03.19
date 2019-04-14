@@ -7,8 +7,18 @@ class Postac:
         self.energia = energia
         self.ekwipunek = []
 
+    def losowa_postac(self):
+        imie = random.choice(["Adam", "Izydor", "Rufus", "Jeremiasz", "Flaneli"])
+        atak = round(random.uniform(5,12))
+        obrona = random.uniform (5,12)
+        energia = random.uniform (20,120)
+        return cls(imie, atak, obrona, energia)
+
     def przedstaw_sie(self):
         print(f"Jestę {self.imie}, mam {self.atak} ataku, {self.obrona} obrony i {self.energia} życia")
+
+    def __str__(self):
+        print f"{self.imie}({self.atak:.2f}/{self.obrona})"
 
     @property
     def atak(self):
@@ -110,3 +120,6 @@ if __name__ == '__main__':
     siekiera = Przedmiot('Siekiera', 20, 5)
     albert.daj_przedmiot(siekiera)
     albert.walka(teodor)
+
+    for _ in range(12):
+        Postac.losowa_postac().przedstaw_sie()
